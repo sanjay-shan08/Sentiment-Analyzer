@@ -83,10 +83,10 @@ The first run will download the NLTK training data and train the sentiment model
 
 ```bash
 sentiment-dashboard/
-=> app.py         # Streamlit UI and dashboard logic
-=> model.py          # Model training and sentiment prediction
-=> fetch_data.py     # Reddit API integration
-=> .env      # Template for credentials
+=> app.py - Streamlit UI and dashboard logic
+=> model.py - Model training and sentiment prediction
+=> fetch_data.py - Reddit API integration
+=> .env - Template for credentials
 => .gitignore
 ```
 
