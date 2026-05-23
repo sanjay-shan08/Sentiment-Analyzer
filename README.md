@@ -71,18 +71,18 @@ The first run will download the NLTK training data and train the sentiment model
 
 ## How it works
 
-**Data** — Reddit posts are fetched using the PRAW library via Reddit's official search API.
+**Data** - Reddit posts are fetched using the PRAW library via Reddit's official search API.
 
-**Model** — A scikit-learn pipeline of TF-IDF vectorizer (15k features, bigrams) + Logistic Regression, trained on NLTK's Twitter Samples corpus (5,000 positive + 5,000 negative tweets). The model is saved to disk after the first training run.
+**Model** - A scikit-learn pipeline of TF-IDF vectorizer (15k features, bigrams) + Logistic Regression, trained on NLTK's Twitter Samples corpus (5,000 positive + 5,000 negative tweets). The model is saved to disk after the first training run.
 
-**Sentiment score** — Each post gets a label (Positive/Negative), a confidence percentage, and a score from -1 (very negative) to +1 (very positive).
+**Sentiment score** - Each post gets a label (Positive/Negative), a confidence percentage, and a score from -1 (very negative) to +1 (very positive).
 
 ---
 
 ## Project structure
 
 ```bash
-sentiment-dashboard/
+Sentiment-Analyzer/
 => app.py - Streamlit UI and dashboard logic
 => model.py - Model training and sentiment prediction
 => fetch_data.py - Reddit API integration
@@ -95,8 +95,8 @@ sentiment-dashboard/
 ## Requirements
 
 - Python 3.8+
-- Reddit API credentials (see setup above)
+- Reddit API credentials (optional as it runs on sample data)
 
 
 NOTE:
-This is still a work in progress as my API access request hasn't been confirmed yet.
+My API access request hasn't been confirmed yet. So, I have enabled the model to run on a sample data that mimics the live API data.
